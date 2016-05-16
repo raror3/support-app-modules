@@ -1,4 +1,5 @@
 == App Stream Module
+image:https://travis-ci.org/aamol/support-app-modules.svg?branch=master["Build Status", link="https://travis-ci.org/aamol/support-app-modules"]
 
 *Build*
 
