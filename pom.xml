@@ -20,6 +20,7 @@
 		<module>app-dependencies</module>
 		<module>app-docs</module>
 		<module>mail</module>
+		<module>apps</module>
 	</modules>
 
 	<dependencyManagement>
