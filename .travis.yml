@@ -1,4 +1,4 @@
 language: java
 jdk:
   - oraclejdk8
-install: "sh mvnw clean install"  
+script: "sh mvnw clean install"  
