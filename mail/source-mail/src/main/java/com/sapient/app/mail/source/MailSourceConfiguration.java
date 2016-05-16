@@ -67,7 +67,7 @@ public class MailSourceConfiguration {
 
 		flowBuilder = getFlowBuilder();
 
-		return flowBuilder.transform(Transformers.fromMail()).channel(source.output())
+		return flowBuilder.channel(source.output())
 				.get();
 	}
 

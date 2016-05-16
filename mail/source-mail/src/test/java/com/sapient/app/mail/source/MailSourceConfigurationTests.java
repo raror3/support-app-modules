@@ -17,12 +17,12 @@ package com.sapient.app.mail.source;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
 
-import org.hamcrest.Matchers;
+import javax.mail.internet.MimeMessage;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -94,11 +94,10 @@ public abstract class MailSourceConfigurationTests {
 		@Test
 		public void testSimpleTest() throws Exception {
 
-			Message<?> received = messageCollector.forChannel(source.output()).poll(10,
+			Message<MimeMessage> received = (Message<MimeMessage>) messageCollector.forChannel(source.output()).poll(10,
 					TimeUnit.SECONDS);
 			assertNotNull(received);
-			assertThat(received.getPayload(), Matchers.instanceOf(String.class));
-			assertEquals("foo\r\n", received.getPayload());
+			assertEquals("foo\r\n", received.getPayload().getContent());
 		}
 
 	}
@@ -115,11 +114,10 @@ public abstract class MailSourceConfigurationTests {
 		@Test
 		public void testSimpleTest() throws Exception {
 
-			Message<?> received = messageCollector.forChannel(source.output()).poll(10,
+			Message<MimeMessage> received = (Message<MimeMessage>) messageCollector.forChannel(source.output()).poll(10,
 					TimeUnit.SECONDS);
 			assertNotNull(received);
-			assertThat(received.getPayload(), Matchers.instanceOf(String.class));
-			assertTrue(!received.getPayload().equals("Test Mail"));
+			assertTrue(!received.getPayload().getContent().equals("Test Mail"));
 		}
 
 	}
@@ -135,11 +133,10 @@ public abstract class MailSourceConfigurationTests {
 		@Test
 		public void testSimpleTest() throws Exception {
 
-			Message<?> received = messageCollector.forChannel(source.output()).poll(10,
+			Message<MimeMessage> received = (Message<MimeMessage>) messageCollector.forChannel(source.output()).poll(10,
 					TimeUnit.SECONDS);
 			assertNotNull(received);
-			assertThat(received.getPayload(), Matchers.instanceOf(String.class));
-			assertEquals("foo\r\n", received.getPayload());
+			assertEquals("foo\r\n", received.getPayload().getContent());
 		}
 
 	}
@@ -156,11 +153,10 @@ public abstract class MailSourceConfigurationTests {
 		@Test
 		public void testSimpleTest() throws Exception {
 
-			Message<?> received = messageCollector.forChannel(source.output()).poll(10,
+			Message<MimeMessage> received = (Message<MimeMessage>) messageCollector.forChannel(source.output()).poll(10,
 					TimeUnit.SECONDS);
 			assertNotNull(received);
-			assertThat(received.getPayload(), Matchers.instanceOf(String.class));
-			assertTrue(!received.getPayload().equals("Test Mail"));
+			assertTrue(!received.getPayload().getContent().equals("Test Mail"));
 		}
 
 	}
@@ -176,11 +172,10 @@ public abstract class MailSourceConfigurationTests {
 		@Test
 		public void testSimpleTest() throws Exception {
 
-			Message<?> received = messageCollector.forChannel(source.output()).poll(10,
+			Message<MimeMessage> received = (Message<MimeMessage>) messageCollector.forChannel(source.output()).poll(10,
 					TimeUnit.SECONDS);
 			assertNotNull(received);
-			assertThat(received.getPayload(), Matchers.instanceOf(String.class));
-			assertEquals("foo\r\n", received.getPayload());
+			assertEquals("foo\r\n", received.getPayload().getContent());
 		}
 
 	}
@@ -196,11 +191,10 @@ public abstract class MailSourceConfigurationTests {
 		@Test
 		public void testSimpleTest() throws Exception {
 
-			Message<?> received = messageCollector.forChannel(source.output()).poll(10,
+			Message<MimeMessage> received = (Message<MimeMessage>) messageCollector.forChannel(source.output()).poll(10,
 					TimeUnit.SECONDS);
 			assertNotNull(received);
-			assertThat(received.getPayload(), Matchers.instanceOf(String.class));
-			assertTrue(!received.getPayload().equals("Test Mail"));
+			assertTrue(!received.getPayload().getContent().equals("Test Mail"));
 		}
 
 	}
