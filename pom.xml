@@ -18,6 +18,7 @@
 
 	<modules>
 		<module>app-dependencies</module>
+		<module>app-test-support</module>
 		<module>mail</module>
 		<module>apps</module>
 	</modules>

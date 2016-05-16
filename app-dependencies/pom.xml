@@ -83,6 +83,12 @@
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>com.sapient.stream.app</groupId>
+				<artifactId>app-test-support</artifactId>
+				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<scope>test</scope>
+			</dependency>
 
 			<!-- Core dependencies needed for the starter libs -->
 
