@@ -1,4 +1,4 @@
-== Spring Cloud Stream App Starters Stream image:https://build.spring.io/plugins/servlet/buildStatusImage/SCS-SMJLE[Build Status, link=https://build.spring.io/browse/SCS-APPS] image:https://badge.waffle.io/spring-cloud/spring-cloud-stream-app-starters.svg?label=ready&title=Ready[Stories Ready, link=http://waffle.io/spring-cloud/spring-cloud-stream] image:https://badge.waffle.io/spring-cloud/spring-cloud-stream-app-starters.svg?label=In%20Progress&title=In%20Progress[Stores In Progress, link=http://waffle.io/spring-cloud/spring-cloud-stream-app-starters]
+== App Stream Module
 
 *Build*
 
@@ -10,24 +10,9 @@ $ ./mvnw clean install
 
 *Quick Introduction*
 
-Spring Cloud Stream App Starters contain starter projects for various sources,
+App Stream Module project for Stream apps. This will contain custom modules for various sources,
 sinks and processors used in https://github.com/spring-cloud/spring-cloud-stream[Spring Cloud Stream].
 
-There is a convenient script provided to generate binder based Spring Boot
-Applications for all the starters. Currently, it generates applications for both
-Kafka and Rabbitmq based binders. These out of the box generated applications
-are very basic in functionality and thus you may want to create similar apps
-using the starters as a basis.
-
-*Generating Out of the Box Binder based Apps*
-
-----
-$ ./generateApps.sh
-
-$ cd apps
-
-Here you will find the auto generated apps.
-----
 
 For more information please refer to this
 https://github.com/spring-cloud/spring-cloud-stream-app-starters/blob/master/spring-cloud-stream-app-starters-docs/src/main/asciidoc/overview.adoc[overview].
