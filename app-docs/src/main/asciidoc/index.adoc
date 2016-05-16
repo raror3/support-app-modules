@@ -1,0 +1,30 @@
+= Spring Cloud Stream Reference Guide
+Sabby Anandan, Artem Bilan, Marius Bogoevici, Eric Bottard, Mark Fisher, Ilayaperumal Gopinathan, Gunnar Hillert, Mark Pollack, Patrick Peralta, Glenn Renfro, Gary Russell, Thomas Risberg, David Turanski, Janne Valkealahti
+:doctype: book
+:toc:
+:toclevels: 4
+:source-highlighter: prettify
+:numbered:
+:icons: font
+:hide-uri-scheme:
+
+// ======================================================================================
+
+= Reference Guide
+include::overview.adoc[]
+
+[[starters]]
+= Starters
+include::sources.adoc[]
+
+include::processors.adoc[]
+
+include::sinks.adoc[]
+
+= Appendices
+[appendix]
+include::building.adoc[]
+
+include::contributing.adoc[]
+
+// ======================================================================================
