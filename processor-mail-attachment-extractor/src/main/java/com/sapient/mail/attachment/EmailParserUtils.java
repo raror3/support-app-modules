@@ -11,9 +11,7 @@ import javax.mail.BodyPart;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import javax.mail.Part;
-import javax.mail.internet.ContentType;
 import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.ParseException;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;

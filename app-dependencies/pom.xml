@@ -21,6 +21,9 @@
 		<netty.version>4.0.27.Final</netty.version>
 		<postgresql.version>9.4-1201-jdbc41</postgresql.version>
 		<pmml.version>1.2.6</pmml.version>
+		<spring-boot.version>1.2.3.RELEASE</spring-boot.version>
+		<jackson.version>2.4.5</jackson.version>
+
 	</properties>
 
 	<dependencyManagement>
@@ -35,7 +38,16 @@
 				<artifactId>spring-integration-file</artifactId>
 				<version>${spring-integration.version}</version>
 			</dependency>
-
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-configuration-processor</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.dataformat</groupId>
+				<artifactId>jackson-dataformat-csv</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

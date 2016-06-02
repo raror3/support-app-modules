@@ -17,6 +17,7 @@
 		<module>app-dependencies</module>
 		<module>app-test-support</module>
 		<module>processor-mail-attachment-extractor</module>
+		<module>processor-csv-to-json-transformer</module>
 	</modules>
 
 	<dependencyManagement>
